@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //originally 1rem is 16px to set 1 rem =10px; we need to apply this 10px/16px = 62.5%
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $primary-font;
+}

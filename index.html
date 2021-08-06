@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HDI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(14, 72px);
+            grid-column-gap: 20px;
+            justify-content: center;
+        }
+
+        .header {
+            height: 200px;
+            grid-column: 1 /span -1;
+            background-color: black;
+            grid-column: 1/15;
+        }
+
+        .div {
+            background-color: white;
+            height: 400px;
+            grid-column: 1/15;
+        }
+
+        .footer {
+            height: 300px;
+            grid-column: 1/15;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-section">
+        <div class="flex">
+            <div class="header__logo">
+                <img src="img/HDI_Logo.svg" alt="LOGO IMG" class="header__logoImg">
+            </div>
+            <nav class="header__navigation">
+                <ul class="list">
+                    <li class="list__item"><a href="#" class="list__link">Unsere Leistungen</a></li>
+                    <li class="list__item"><a href="#" class="list__link">So funktioniert’s</a></li>
+                    <li class="list__item"><a href="#" class="list__link">Unsere Tarife</a></li>
+                    <li class="list__item"><a href="#" class="list__link">Unsere Empfehlungen</a></li>
+                    <li class="list__item"><a href="#" class="list__link">Noch Fragen?</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="inro-section" style="    background-size: contain;
+    background: url(img/MaskGroup.svg);
+    background-position-x: right;
+    height: 500px;
+    background-repeat: no-repeat;">
+        INRO SECTION
+    </section>
+
+    <section class="section-first">
+        First Section
+    </section>
+
+    <section class="section-two">
+        Second Section
+    </section>
+    <section class="section-third">
+        Third Section
+    </section>
+    <section class="section-fourth">
+        Fourth Section
+    </section>
+    <section class="section-fifth">
+        Fifth Section
+    </section>
+    <section class="section-sixth">
+        Sixth Section
+    </section>
+    <section class="section-seventh">
+        Seventh Section
+    </section>
+    <section class="section-eighth">
+        Eight Section
+    </section>
+
+    <footer class="footer-section">
+        FOOTER SECTION
+    </footer>
+</body>
+
+</html>
