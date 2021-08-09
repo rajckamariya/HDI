@@ -5,23 +5,109 @@
   margin: 0;
   box-sizing: inherit; }
 
+@font-face {
+  font-family: HDIGerlingsans;
+  src: url("../fonts/hdi-gerlingsans-regular-webfont.woff"); }
+
 html {
   font-size: 62.5%; }
 
 body {
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif; }
+  font-family: HDIGerlingsans; }
+
+.heading-1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1; }
+  .heading-1--primary {
+    color: #009c33; }
+
+.heading-2 {
+  font-size: 2.6rem;
+  font-weight: normal;
+  line-height: 1.13;
+  letter-spacing: 0.75px; }
+  .heading-2--black {
+    color: #000000; }
+
+.heading-3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.8; }
+  .heading-3--black {
+    color: #000000; }
+
+.heading-4 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.8); }
+
+.mb-extraSmall {
+  margin-bottom: 1rem; }
+
+.mb-small {
+  margin-bottom: 3rem; }
 
 .grid {
   display: grid;
-  grid-template-columns: 7.2rem;
-  grid-column-gap: 2.4rem; }
+  grid-template-columns: repeat(14, 7.2rem);
+  grid-column-gap: 2.4rem;
+  justify-content: center; }
 
 .flex {
   display: flex;
   width: 132rem;
   margin: 0 auto;
   justify-content: space-between; }
+
+.btn__orange {
+  display: flex;
+  align-items: center;
+  background-color: #ff9632;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-width: 0;
+  outline: none;
+  position: relative;
+  border-radius: 4px;
+  margin-right: 2rem;
+  cursor: pointer; }
+  .btn__orange div {
+    padding: 0.5rem 4rem; }
+  .btn__orange:hover {
+    background-color: #e18e41; }
+  .btn__orange:hover > .arrow_img {
+    background-color: #db702b; }
+
+.arrow_img {
+  padding: 0.5rem !important;
+  background: #ff7200;
+  border-radius: 0 4px 4px 0; }
+  .arrow_img img {
+    right: 0;
+    height: 100%; }
+
+.btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-width: 0;
+  outline: none;
+  position: relative;
+  border-radius: 4px;
+  padding: 0.5rem 4rem;
+  cursor: pointer; }
+  .btn--secondary {
+    background-color: #ff9632;
+    color: #ffffff; }
+  .btn--white {
+    background-color: #ffffff;
+    color: #ff9632;
+    border: 1px solid #ff9632; }
+    .btn--white:hover {
+      background-color: #ff9632;
+      color: #ffffff; }
 
 .header__logoImg {
   width: 10rem; }
@@ -36,9 +122,10 @@ body {
   .list__item {
     margin: 0 3rem; }
   .list__link {
+    cursor: pointer;
     font-family: inherit;
     font-size: 1.8rem;
-    font-weight: 400;
+    font-weight: 300;
     font-stretch: condensed;
     font-style: normal;
     line-height: 1.3;
@@ -50,5 +137,43 @@ body {
     .list__link:hover {
       font-weight: bold; }
 
+.intro__details {
+  grid-column: 1/9; }
+
+.intro__heading {
+  margin: 6rem 0 3rem 0; }
+
+.intro__img {
+  grid-column: 9/15;
+  justify-self: end;
+  position: relative; }
+
+.intro__service {
+  list-style: none;
+  padding-top: 2rem; }
+  .intro__service li {
+    display: flex;
+    align-items: center; }
+    .intro__service li:not(:last-child) {
+      margin-bottom: 2rem; }
+
+.intro__buttons {
+  display: flex;
+  margin-top: 5rem; }
+
+.service__icon {
+  margin-right: 1.5rem; }
+
+#animationBike {
+  position: absolute;
+  right: 0; }
+
 .header-section {
   margin: 2rem 0; }
+
+.intro-section {
+  margin: 4rem 0;
+  background-size: contain;
+  background: url("../img/MaskGroup.svg");
+  background-position-x: right;
+  background-repeat: no-repeat; }

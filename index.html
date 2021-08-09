@@ -7,21 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HDI</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
+
 
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .container {
-            display: grid;
-            grid-template-columns: repeat(14, 72px);
-            grid-column-gap: 20px;
-            justify-content: center;
-        }
-
         .header {
             height: 200px;
             grid-column: 1 /span -1;
@@ -33,6 +22,15 @@
             background-color: white;
             height: 400px;
             grid-column: 1/15;
+        }
+
+        .icon {
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            stroke-width: 0;
+            stroke: currentColor;
+            fill: currentColor;
         }
 
         .footer {
@@ -60,12 +58,68 @@
             </nav>
         </div>
     </header>
-    <section class="inro-section" style="    background-size: contain;
-    background: url(img/MaskGroup.svg);
-    background-position-x: right;
-    height: 500px;
-    background-repeat: no-repeat;">
-        INRO SECTION
+    <section class="intro-section grid">
+        <div class="intro__details">
+            <div class="intro__heading">
+                <h1 class="heading-1 heading-1--primary mb-extraSmall">HDI Motorradversicherung</h1>
+                <h2 class="heading-2 heading-2--black">Entspannt in der Kurve liegen</h2>
+            </div>
+            <ul class="intro__service">
+                <li>
+                    <div class="service__icon">
+                        <img src="img/Checkmark_green.svg">
+                    </div>
+                    <div class="service__details">
+                        <h3 class="heading-3">Rundum sorglos</h3>
+                        <h4 class="heading-4">Der beste Schutz für Sie und Ihr Motorrad</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="service__icon">
+                        <img src="img/Checkmark_green.svg">
+                    </div>
+                    <div class="service__details">
+                        <h3 class="heading-3">24-Stunden-Service</h3>
+                        <h4 class="heading-4">Der Über 100 Jahre Erfahrung, stets für Sie erreichbar</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="service__icon">
+                        <img src="img/Checkmark_green.svg">
+                    </div>
+                    <div class="service__details">
+                        <h3 class="heading-3">Schnell und digital</h3>
+                        <h4 class="heading-4">
+                            In 5 Minuten online zur eVB-Nummer</h4>
+                    </div>
+                </li>
+            </ul>
+            <div class="intro__buttons">
+                <div>
+                    <button class="btn__orange">
+                        <div>
+                            <span>Zu den Tarifen</span>
+                        </div>
+                        <div class="arrow_img"><img src="img/arrow_forward_ios.svg" alt="Right Arrow"></div>
+                    </button>
+                </div>
+
+                <button class="btn btn--white">
+                    Jetzt Tarif berechnen
+                </button>
+            </div>
+        </div>
+        <div class="intro__img">
+            <img id="animationBike-2" src="img/Bike.svg" alt="BIKE">
+            <!-- <object id="animationBike" data="img/animation/Crew.svg" type="image/svg+xml">
+                <img src="img/animation/Crew.svg" />
+            </object> -->
+
+        </div>
+    </section>
+
+    <section class="section-first">
+        First Section
     </section>
 
     <section class="section-first">
@@ -97,6 +151,11 @@
     <footer class="footer-section">
         FOOTER SECTION
     </footer>
+
+    <!-- <script>
+        setTimeout(function () { document.getElementById("animationBike").style.display = "none"; }, 12000)
+    </script> -->
+
 </body>
 
 </html>
