@@ -30,24 +30,56 @@ body {
   letter-spacing: 0.75px; }
   .heading-2--black {
     color: #000000; }
+  .heading-2--primary {
+    color: #009c33;
+    font-weight: 600; }
 
 .heading-3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   line-height: 1.8; }
   .heading-3--black {
     color: #000000; }
+  .heading-3--primary {
+    color: #009c33; }
 
 .heading-4 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.8); }
+
+.heading-5 {
+  font-size: 1rem;
   font-weight: 300;
   color: rgba(0, 0, 0, 0.8); }
+
+.paragraph {
+  margin-top: 1rem;
+  line-height: 1.5;
+  font-size: 1.5rem; }
+
+.bold {
+  font-weight: bold; }
 
 .mb-extraSmall {
   margin-bottom: 1rem; }
 
 .mb-small {
   margin-bottom: 3rem; }
+
+.text-align--center {
+  text-align: center; }
+
+.btn.text-align--right {
+  display: flex;
+  margin-left: auto; }
+
+.text-align--right {
+  text-align: right; }
+
+.text-align--left {
+  text-align: left; }
 
 .grid {
   display: grid;
@@ -96,17 +128,22 @@ body {
   outline: none;
   position: relative;
   border-radius: 4px;
-  padding: 0.5rem 4rem;
-  cursor: pointer; }
+  padding: 1rem 4rem;
+  cursor: pointer;
+  width: fit-content; }
   .btn--secondary {
-    background-color: #ff9632;
-    color: #ffffff; }
-  .btn--white {
     background-color: #ffffff;
     color: #ff9632;
     border: 1px solid #ff9632; }
-    .btn--white:hover {
+    .btn--secondary:hover {
       background-color: #ff9632;
+      color: #ffffff; }
+  .btn--primary {
+    background-color: #ffffff;
+    color: #009c33;
+    border: 1px solid #009c33; }
+    .btn--primary:hover {
+      background-color: #009c33;
       color: #ffffff; }
 
 .header__logoImg {
@@ -164,9 +201,75 @@ body {
 .service__icon {
   margin-right: 1.5rem; }
 
-#animationBike {
-  position: absolute;
-  right: 0; }
+.sec-first__heading {
+  grid-column: 4/11;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  margin-left: 3rem; }
+
+.sec-first__desc {
+  grid-column: 4/11;
+  margin-bottom: 1rem;
+  padding: 0 5rem;
+  margin-left: 3rem; }
+
+.sec-first__insurance {
+  grid-column: 2/14;
+  display: grid;
+  grid-template-columns: repeat(12, 7.2rem);
+  grid-column-gap: 2.4rem;
+  justify-content: center;
+  margin-left: -6rem; }
+
+.sec-first__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .sec-first__card--1 {
+    grid-column: 1/5; }
+  .sec-first__card--2 {
+    grid-column: 5/9; }
+  .sec-first__card--3 {
+    grid-column: 9/13; }
+
+.sec-first__photo {
+  width: 11rem;
+  margin-bottom: 1rem; }
+
+.sec-two__left {
+  grid-column: 2/7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.sec-two__right {
+  margin-top: 10rem;
+  grid-column: 8/13;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.sec-two__heading {
+  margin-top: 10rem; }
+
+.sec-two__img {
+  height: 50rem;
+  margin-top: 15rem; }
+
+.sec-two__btn {
+  margin-top: 3rem; }
+
+#wildFall,
+#Fahrbahn,
+#Auffahrunfall {
+  width: 100%;
+  height: 100%;
+  border: none; }
+
+.sec-two__mt {
+  margin-top: 37rem; }
 
 .header-section {
   margin: 2rem 0; }
@@ -177,3 +280,14 @@ body {
   background: url("../img/MaskGroup.svg");
   background-position-x: right;
   background-repeat: no-repeat; }
+
+.two-sections {
+  background: url("../img/animation/Street_Illustration.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: top;
+  margin-top: -10rem;
+  padding-top: 20rem; }
+
+.section-first {
+  margin: 0 5rem; }

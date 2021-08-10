@@ -11,28 +11,6 @@
 
     <link rel="stylesheet" href="css/style.css">
     <style>
-        .header {
-            height: 200px;
-            grid-column: 1 /span -1;
-            background-color: black;
-            grid-column: 1/15;
-        }
-
-        .div {
-            background-color: white;
-            height: 400px;
-            grid-column: 1/15;
-        }
-
-        .icon {
-            display: inline-block;
-            width: 1em;
-            height: 1em;
-            stroke-width: 0;
-            stroke: currentColor;
-            fill: currentColor;
-        }
-
         .footer {
             height: 300px;
             grid-column: 1/15;
@@ -104,7 +82,7 @@
                     </button>
                 </div>
 
-                <button class="btn btn--white">
+                <button class="btn btn--secondary">
                     Jetzt Tarif berechnen
                 </button>
             </div>
@@ -118,19 +96,158 @@
         </div>
     </section>
 
-    <section class="section-first">
-        First Section
-    </section>
+    <div class="two-sections">
+        <section class="section-first grid">
+            <div class="sec-first__heading">
+                <h5 class="heading-4 mb-extraSmall">
+                    1 von 8
+                </h5>
+                <h2 class="heading-2 heading-2--primary mb-small">Mit freiem Kopf Gas geben</h2>
+                <h4 class="heading-4">Wie, erfahren Sie in den nächsten vier Minuten</h4>
+            </div>
+            <div class="sec-first__desc">
+                <h4 class="heading-4 text-align--center">Mit der HDI Motorradversicherung steuern Sie Ihre Maschine
+                    unbeschwert über die
+                    schönsten Straßen Deutschlands.
+                    Weil Sie wissen, dass Sie für alle Fälle gewappnet sind.
+                </h4>
+            </div>
+            <div class="sec-first__insurance">
+                <div class="sec-first__card sec-first__card--1">
+                    <img class="sec-first__photo" src="img/images/Icon_Unfall_sorgenfrei.svg" alt="Insurance 1">
+                    <h3 class="heading-3 heading-3--primary mb-extraSmall">Für den Fall des Unfalls sorgenfrei</h3>
+                    <p class="paragraph text-align--center">Es kracht – alle 12 Sekunden auf Deutschlands
+                        Straßen. Schützen Sie
+                        Sich davor und vor vielem mehr. <span class="bold">95 % zufriedene HDI-Kunden</span> sprechen
+                        für sich. Wir sorgen uns um
+                        Sie und Ihr Motorrad.</p>
+                </div>
+                <div class="sec-first__card sec-first__card--2">
+                    <img class="sec-first__photo" src="img/images/Icon_Werkstattservice.svg" alt="Insurance 2">
+                    <h3 class="heading-3 heading-3--primary mb-extraSmall">In Windeseile zurück auf die Straße</h3>
+                    <p class="paragraph text-align--center">
+                        Dank HDI sind Sie in jedem Fall schnell wieder mobil. Unser <span
+                            class="bold">Schadenservice</span> lässt technische
+                        Defekte an Ihrer Maschine im Handumdrehen und kompetent beheben.</p>
+                </div>
+                <div class="sec-first__card sec-first__card--3">
+                    <img class="sec-first__photo" src="img/images/Icon_Flexibel.svg" alt="Insurance 3">
+                    <h3 class="heading-3 heading-3--primary mb-extraSmall">So flexibel wie Ihr Fahrstil</h3>
+                    <p class="paragraph text-align--center">
+                        Die HDI Motorradversicherung sichert Sie so ab, wie es zu Ihnen passt. Mit <span
+                            class="bold">flexiblen Tarifen</span> und
+                        allen Gefahren im Blick. Damit Sie unbeschwert den Fahrtwind genießen können.</p>
+                </div>
+            </div>
 
-    <section class="section-first">
-        First Section
-    </section>
+        </section>
+        <section class="section-two grid">
+            <div class="sec-two__left">
+                <div class="sec-two__heading">
+                    <h5 class="heading-4 mb-extraSmall text-align--right">
+                        2 von 8
+                    </h5>
+                    <h2 class="heading-2 heading-2--primary mb-small text-align--right">
+                        Wenn Tiere Ihren Weg kreuzen
+                    </h2>
+                </div>
+                <div class="sec-two__desc">
+                    <p class="paragraph text-align--right">
+                        <span class="bold">Lena Fuchs</span> genießt es, auf ihrem Zweirad durch die Welt zu fahren.
+                        Meist beträgt ihr Bremsweg
+                        dabei kaum mehr als 50 Meter. Doch auch das ist manchmal nicht genug! Heute kreuzt ein Reh Lenas
+                        Weg, Ausweichen unmöglich. Zum Glück bleibt sie unversehrt.
+                    </p>
+                    <p class="paragraph text-align--right">
+                        <span class="bold">Doppeltes Glück:</span> Um Bergung und Reparatur ihres Motorrads
+                        und alle Formalia der Wildkollision kümmert sich die Motorradversicherung der HDI.
+                    </p>
+                </div>
+                <div class="sec-two__btn btn btn--primary text-align--right">
+                    Jetzt Tarif berechnen
+                </div>
+            </div>
+            <div class="sec-two__right sec-two__img">
+                <iframe id="wildFall" onmouseover="wildfall()" src="img/animation/Wildunfall.svg" type="image/svg+xml">
+                    <img src="img/animation/Wildunfall.svg"></iframe>
 
-    <section class="section-two">
-        Second Section
-    </section>
+            </div>
+            <div class="sec-two__left sec-two__img">
+                <iframe id="Fahrbahn" onmouseover="fahrbahn()" src="img/animation/Abkommen_Fahrbahn.svg"
+                    type="image/svg+xml">
+                    <img src="img/animation/Abkommen_Fahrbahn.svg"></iframe>
+            </div>
+            <div class="sec-two__right">
+                <div class="sec-two__heading">
+                    <h2 class="heading-2 heading-2--primary mb-small text-align--left">
+                        Wenn Laub zur Panne führt
+                    </h2>
+                </div>
+                <div class="sec-two__desc">
+                    <p class="paragraph text-align--left">
+                        Wälder, Autobahnen, Hochstraßen – <span class="bold">Peter Baum</span> legt sich gerne in immer
+                        neue Kurven. Heute ist er
+                        mal wieder zügig unterwegs. Da passiert es: Laubansammlungen verstecken Steine und andere
+                        Hindernisse! Und schon kommt Peter von der Fahrbahn ab.
+                        Zum Glück passiert ihm nichts.
+                    </p>
+                    <p class="paragraph text-align--left">
+                        Um die <span class="bold">Bergung seiner defekten Maschine</span> und seinen <span
+                            class="bold">Transport nach
+                            Hause</span> kümmert sich außerdem
+                        die Motorradversicherung von HDI – noch einmal gutgegangen, Peter!
+                    </p>
+                </div>
+                <div class="sec-two__btn btn btn--primary text-align--left">
+                    Jetzt Tarif berechnen
+                </div>
+            </div>
+            <div class="sec-two__left">
+                <div class="sec-two__heading">
+                    <h2 class="heading-2 heading-2--primary mb-small text-align--right">
+                        Mal wieder ausgebremst
+                    </h2>
+                </div>
+                <div class="sec-two__desc">
+                    <p class="paragraph text-align--right">
+                        Heute mal wieder richtig Gas geben! <span class="bold">Luca Schnell</span> plant einen
+                        wunderbaren Sonntagsausflug. Doch
+                        schon bei der Ortsausfahrt erlebt er sein blaues Wunder. Ein Auto trödelt Richtung Ortsausfahrt,
+                        als ein weiteres Fahrzeug unerwartet von der Seite auftaucht. Der Pkw vor Luca legt eine
+                        Vollbremsung ein –
+                        krach, Auffahrunfall!
+                    </p>
+                    <p class="paragraph text-align--right">
+                        Zu seinem Glück ist Luca bei der HDI versichert.
+                        <span class="bold">Alle entstandenen Kosten werden ihm ersetzt</span> und schon bald kann er –
+                        diesmal etwas geduldiger –
+                        neue Wege erkunden.
+                    </p>
+                </div>
+                <div class="sec-two__btn btn btn--primary text-align--right">
+                    Jetzt Tarif berechnen
+                </div>
+            </div>
+            <div class="sec-two__right sec-two__img sec-two__mt">
+                <iframe id="Auffahrunfall" onmouseover="auffahrunfall()" src="img/animation/Auffahrunfall.svg"
+                    type="image/svg+xml">
+                    <img src="img/animation/Auffahrunfall.svg"></iframe>
+            </div>
+        </section>
+
+    </div>
+
+
     <section class="section-third">
-        Third Section
+        <div class="sec-third__heading">
+            <h5 class="heading-4 mb-extraSmall">
+                3 von 8
+            </h5>
+            <h2 class="heading-2 heading-2--primary mb-small">online In fünf Minuten
+                <br>zur eVB-Nummer
+            </h2>
+            <h4 class="heading-4">Sichern Sie sich ab und führen Ihre Maschine guten Gewissens aus</h4>
+        </div>
     </section>
     <section class="section-fourth">
         Fourth Section
@@ -151,11 +268,10 @@
     <footer class="footer-section">
         FOOTER SECTION
     </footer>
-
     <!-- <script>
         setTimeout(function () { document.getElementById("animationBike").style.display = "none"; }, 12000)
     </script> -->
-
+    <script src="js/animation.js"></script>
 </body>
 
 </html>

@@ -14,17 +14,38 @@
   &--black {
     color: $color-black-two;
   }
+  &--primary {
+    color: $primary-color;
+    font-weight: 600;
+  }
 }
 .heading-3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   line-height: 1.8;
   &--black {
     color: $color-black-two;
   }
+  &--primary {
+    color: $primary-color;
+  }
 }
 .heading-4 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: rgba($color-black-two, 0.8);
+}
+.heading-5 {
+  font-size: 1rem;
   font-weight: 300;
   color: rgba($color-black-two, 0.8);
+}
+.paragraph {
+  margin-top: 1rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+.bold {
+  font-weight: bold;
 }
