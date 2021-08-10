@@ -22,6 +22,8 @@ body {
   line-height: 1; }
   .heading-1--primary {
     color: #009c33; }
+  .heading-1--secondary {
+    color: #ff7200; }
 
 .heading-2 {
   font-size: 2.6rem;
@@ -48,6 +50,8 @@ body {
   font-weight: 300;
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.8); }
+  .heading-4--primary {
+    color: #009c33; }
 
 .heading-5 {
   font-size: 1rem;
@@ -61,6 +65,9 @@ body {
 
 .bold {
   font-weight: bold; }
+
+.uppercase {
+  text-transform: uppercase; }
 
 .mb-extraSmall {
   margin-bottom: 1rem; }
@@ -252,11 +259,11 @@ body {
   justify-content: center; }
 
 .sec-two__heading {
-  margin-top: 10rem; }
+  margin-top: 5rem; }
 
 .sec-two__img {
   height: 50rem;
-  margin-top: 15rem; }
+  margin-top: 10rem; }
 
 .sec-two__btn {
   margin-top: 3rem; }
@@ -270,6 +277,42 @@ body {
 
 .sec-two__mt {
   margin-top: 37rem; }
+
+.sec-third__heading {
+  grid-column: 5/11;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem; }
+
+.sec-third__box {
+  grid-column: 1/15;
+  display: flex;
+  justify-content: space-between; }
+
+.sec-third__card {
+  display: flex;
+  width: 35rem; }
+
+.sec-third__img {
+  flex-basis: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+
+.sec-third__number {
+  flex-basis: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1rem; }
+
+.sec-third__detail {
+  flex-basis: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
 
 .header-section {
   margin: 2rem 0; }
@@ -290,4 +333,10 @@ body {
   padding-top: 20rem; }
 
 .section-first {
-  margin: 0 5rem; }
+  margin: 5rem 0; }
+
+.section-third {
+  margin: 5rem 0; }
+
+.green-section {
+  background-color: #e6f5eb; }

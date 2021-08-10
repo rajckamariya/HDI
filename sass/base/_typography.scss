@@ -5,6 +5,9 @@
   &--primary {
     color: $primary-color;
   }
+  &--secondary {
+    color: $secondary-color;
+  }
 }
 .heading-2 {
   font-size: 2.6rem;
@@ -35,6 +38,9 @@
   font-weight: 300;
   line-height: 1.5;
   color: rgba($color-black-two, 0.8);
+  &--primary {
+    color: $primary-color;
+  }
 }
 .heading-5 {
   font-size: 1rem;
@@ -48,4 +54,7 @@
 }
 .bold {
   font-weight: bold;
+}
+.uppercase {
+  text-transform: uppercase;
 }
