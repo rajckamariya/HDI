@@ -1,0 +1,35 @@
+//-----------------------SECTION SIXTH CSS---------------------//
+.sec-sixth{
+    &__heading{
+        @include heading;
+    }
+    &__main{
+        grid-column: 2/14;
+        display:flex;
+        justify-content: space-between;
+        margin:5rem 0;
+    }
+    &__button{
+        grid-column: 2/14;
+        display: flex;
+        margin:0 auto;
+    }
+    &__protection{
+        display:flex;
+        width:30%;
+    }
+}
+.protection{
+    &__img{
+        width:10%;
+        display:flex;
+        align-items: start;
+        padding-top:1rem;
+        justify-content: center;
+    }
+    &__desc{
+        width:90%;
+        padding-left:2rem;
+
+    }
+}
