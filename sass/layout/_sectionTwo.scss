@@ -1,0 +1,38 @@
+.sec-two {
+  &__left {
+    grid-column: 2/7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__right {
+    margin-top: 10rem;
+    grid-column: 8/13;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__heading {
+    margin-top: 5rem;
+  }
+  &__desc {
+  }
+  &__img {
+    height: 50rem;
+    margin-top: 10rem;
+  }
+  &__btn {
+    margin-top: 3rem;
+  }
+}
+
+#wildFall,
+#Fahrbahn,
+#Auffahrunfall {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.sec-two__mt {
+  margin-top: 37rem;
+}

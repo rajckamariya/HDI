@@ -1,0 +1,34 @@
+.intro {
+  &__details {
+    grid-column: 1/9;
+  }
+
+  &__heading {
+    margin: 6rem 0 3rem 0;
+  }
+  &__img {
+    grid-column: 9/15;
+    justify-self: end;
+    position: relative;
+  }
+  &__service {
+    list-style: none;
+    padding-top: 2rem;
+    & li {
+      display: flex;
+      align-items: center;
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  &__buttons {
+    display: flex;
+    margin-top: 5rem;
+  }
+}
+.service {
+  &__icon {
+    margin-right: 1.5rem;
+  }
+}

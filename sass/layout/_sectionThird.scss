@@ -1,0 +1,39 @@
+//---------------SECTION THIRD CSS--------------//
+.sec-third {
+  &__heading {
+    grid-column: 5/11;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  &__box {
+    grid-column: 1/15;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card {
+    display: flex;
+    width: 35rem;
+  }
+  &__img {
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &__number {
+    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
+  }
+  &__detail {
+    flex-basis: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

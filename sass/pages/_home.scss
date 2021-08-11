@@ -1,0 +1,29 @@
+.header-section {
+  margin: 2rem 0;
+}
+
+.intro-section {
+  margin: 4rem 0;
+  background-size: contain;
+  background: url("../img/MaskGroup.svg");
+  background-position-x: right;
+  background-repeat: no-repeat;
+}
+
+.two-sections {
+  background: url("../img/animation/Street_Illustration.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: top;
+  margin-top: -10rem;
+  padding-top: 20rem;
+}
+.section-first {
+  margin: 5rem 0;
+}
+.section-third {
+  margin: 5rem 0;
+}
+.green-section {
+  background-color: $primary-color-light;
+}
