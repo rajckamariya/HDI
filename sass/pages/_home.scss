@@ -17,6 +17,9 @@
   background-position-y: top;
   margin-top: -10rem;
   padding-top: 20rem;
+  @media only screen and (max-width:$small){
+    background: transparent;
+  }
 }
 .section-first {
   margin: 5rem 0;
@@ -40,11 +43,17 @@
 }
 .crew_img{
   margin-top:-15rem;
-
+  width:100%;
+  > img{
+    width:100%;
+  }
 }
 .section-eighth{
   margin-top:-1rem;
   padding-top:5rem;
+}
+.primary-back{
+  background-color: $primary-color;
 }
 .footer-section{
   background-color: $primary-color;

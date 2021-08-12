@@ -4,6 +4,9 @@
   }
   &__navigation {
     display: flex;
+    @media only screen and (max-width:$small){
+      display:none;
+    }
   }
 }
 

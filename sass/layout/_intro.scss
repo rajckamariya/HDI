@@ -1,6 +1,9 @@
 .intro {
   &__details {
     grid-column: 1/9;
+    @media only screen and (max-width:$small){
+      grid-column:1/3;
+    }
   }
 
   &__heading {
@@ -10,6 +13,9 @@
     grid-column: 9/15;
     justify-self: end;
     position: relative;
+    @media only screen and (max-width:$small){
+      grid-column:1/3;
+    }
   }
   &__service {
     list-style: none;

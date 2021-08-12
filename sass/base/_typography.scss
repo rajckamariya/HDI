@@ -26,6 +26,9 @@
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 1.8;
+  @media only screen and (max-width:$small){
+    font-size:10rem;
+  }
   &--black {
     color: $color-black-two;
   }
@@ -38,6 +41,9 @@
   font-weight: 300;
   line-height: 1.5;
   color: rgba($color-black-two, 0.8);
+  @media only screen and (max-width:$small){
+    font-size:4rem;
+  }
   &--primary {
     color: $primary-color;
   }
