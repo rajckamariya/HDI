@@ -10,13 +10,6 @@
 
 
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .footer {
-            height: 300px;
-            grid-column: 1/15;
-            background-color: green;
-        }
-    </style>
 </head>
 
 <body>
@@ -975,13 +968,70 @@ MOTORRADVERSICHERUNG WECHSELN
         </section>
 
         <div class="faq grid">
+            <div class="faq__heading">
+                <h3 class="heading-3 heading-3--primary">FAQ</h3>
+            </div>
             <div class="faq__main">
                 <div class="faq__body">
-                        <div class="faq__question">Wie finde ich meine aktuelle Schadenfreiheitsklasse (SF-Klasse)?</div>
+                    <div class="faq__question">Wie finde ich meine aktuelle Schadenfreiheitsklasse (SF-Klasse)?
                         <div class="faq__answer">Ihre aktuelle Schadenfreiheitsklasse finden Sie in der letzten Beitragsrechnung Ihres Motorrad-Versicherers.</div>
-                    
-                    <div class="faq__icon">
+                    </div>
+                    <div class="faq__iconBlock" onclick="showAnswer(this)">
                         <img src="img/arrow_down_green.svg" alt="Arrow Down">
+                    </div>
+                    <div class="faq__iconNone" onclick="hideAnswer(this)">
+                        <img src="img/arrow_up_green.svg" alt="Arrow Up">
+                    </div>
+                </div>
+                <div class="faq__body">
+                    <div class="faq__question">Welche Schadenfreiheitsklasse (SF-Klasse) nehme ich als Grundlage für die Berechnung meiner neuen Motorrad-Versicherung bei HDI?
+                        <div class="faq__answer">Als Grundlage der Berechnung nehmen Sie die SF-Klasse, welche Sie auf der letzten Beitragsrechnung Ihres Motorrad-Versicherers finden, und addieren 1.<Br><Br>
+
+                            Ausnahmen: Es gab im laufenden Jahr einen Schadensfall und/oder es hat eine Sondereinstufung stattgefunden bspw. in Form eines Rabattretters, Zweitwagens, etc.. In diesen Fällen erkundigen Sie sich bitte bei Ihrem aktuellen Motorrad-Versicherer nach Ihrer SF-Klasse.</div>
+                    </div>
+                    <div class="faq__iconBlock" onclick="showAnswer(this)">
+                        <img src="img/arrow_down_green.svg" alt="Arrow Down">
+                    </div>
+                    <div class="faq__iconNone" onclick="hideAnswer(this)">
+                        <img src="img/arrow_up_green.svg" alt="Arrow Up">
+                    </div>
+                </div>
+                <div class="faq__body">
+                    <div class="faq__question">Wie bekomme ich die eVB-Nummer, wenn ich mit meiner Motorrad-Versicherung zu HDI wechseln möchte?
+                        <div class="faq__answer">Wenn Sie mit Ihrem bereits zugelassenen Motorrad zu HDI wechseln, wird die eVB-Nummer nach Abschluss der Versicherung automatisch von uns an das Kraftfahrtbundesamt übermittelt. Sie müssen nichts tun.
+<br><Br>
+                            Im Falle einer bspw. Neuanmeldung oder Ummeldung eines Motorrads benötigen Sie für die Zulassungsstelle eine eVB-Nummer. Diese erhalten Sie am Ende des Onlineantrags.</div>
+                    </div>
+                    <div class="faq__iconBlock" onclick="showAnswer(this)">
+                        <img src="img/arrow_down_green.svg" alt="Arrow Down">
+                    </div>
+                    <div class="faq__iconNone" onclick="hideAnswer(this)">
+                        <img src="img/arrow_up_green.svg" alt="Arrow Up">
+                    </div>
+                </div>
+                <div class="faq__body">
+                    <div class="faq__question">Welche Unterlagen benötige ich, um die Motorrad-Versicherung online bei HDI abzuschließen?
+                        <div class="faq__answer">Um alle benötigten Angaben schnell ausfüllen zu können, legen Sie sich am besten Ihren Fahrzeugschein (für die benötigen Angaben zu Ihrem Fahrzeug) sowie die letzte Beitragsrechnung Ihrer Motorrad-Versicherung (zur Ermittlung Ihrer aktuellen SF-Klasse) bereit.</div>
+                    </div>
+                    <div class="faq__iconBlock" onclick="showAnswer(this)">
+                        <img src="img/arrow_down_green.svg" alt="Arrow Down">
+                    </div>
+                    <div class="faq__iconNone" onclick="hideAnswer(this)">
+                        <img src="img/arrow_up_green.svg" alt="Arrow Up">
+                    </div>
+                </div>
+                <div class="faq__body">
+                    <div class="faq__question">Fußnote*
+                        <div class="faq__answer">
+                            Hinweise zur Preisermittlung:<br><br>
+                            Berechnungsgrundlagen HDI.de Online-Rechner (Stand: 14.01.2020): HDI Motor Komfort/Premium Online<br><br>
+                            Honda CBF 600, Haftplicht + Teilkasko, Nutzung privat, Halter + Fahrer: Versicherungsnehmer, Versicherungsnehmer: 48 Jahre + Führerschein mit 38, Wohneigentum: Einfamilienhaus, Abstellort: Einzel-/Doppelgarage, Beruf: sonstige, PLZ: 30900, Versicherungsbeginn: 01.04.2020, Erstzulassung: 13.02.2010, SF Haftplicht: 10, 9.000 km Fahrleistung, SB Teilkasko: 150 Euro, monatlicher Beitrag bei jährlicher Zahlweise und weitere Angaben</div>
+                    </div>
+                    <div class="faq__iconBlock" onclick="showAnswer(this)">
+                        <img src="img/arrow_down_green.svg" alt="Arrow Down">
+                    </div>
+                    <div class="faq__iconNone" onclick="hideAnswer(this)">
+                        <img src="img/arrow_up_green.svg" alt="Arrow Up">
                     </div>
                 </div>
             </div>
@@ -989,8 +1039,39 @@ MOTORRADVERSICHERUNG WECHSELN
     </div>
 
 
-    <footer class="footer-section">
-        FOOTER SECTION
+    <footer class="footer-section grid">
+        <div class="footer__main">
+            <div class="footer__logo">
+                <img src="img/HDI_RGB-01.svg" alt="Footer Logo">
+            </div>
+            <div class="footer__details">
+                <div class="footer__copyright">
+                    <h3 class="heading-3 heading-3--white">
+                        HDI Versicherung AG
+                    </h3>
+                    <h4 class="heading-4 heading-4--white">
+                        © 2020 HDI Versicherung AG
+                    </h4>
+                </div>
+                <div class="footer__social">
+                    <h4 class="heading-3 heading-3--white text-align--center">
+                        Social Media
+                    </h4>
+                    <div class="footer__icon">
+                        <a href="£" class="footer__facebook"><img src="img/footer-facebook.png" alt=""></a>
+                        <a href="£" class="footer__youtube"><img src="img/footer-youtube.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer__links">
+                    <ul class="footer__list">
+                        <li><a href="£" class="footer__link">Kontakt</a></li>
+                        <li><a href="£" class="footer__link">Impressum</a></li>
+                        <li><a href="£" class="footer__link">Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
     </footer>
     <!-- <script>
         setTimeout(function () { document.getElementById("animationBike").style.display = "none"; }, 12000)

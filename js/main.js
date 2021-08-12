@@ -1,7 +1,26 @@
 var plus = document.getElementById("sec-fourth-action");
 
 plus.addEventListener("click", showTables);
-
+function showAnswer(el){
+  let answer = el.previousElementSibling.children[0];
+  let question = el.previousElementSibling;
+  answer.style.display = "block";
+  answer.style.opacity = "1";
+  question.style.fontSize = "1.8rem";
+  answer.style.marginTop = "1.8rem"; 
+  el.style.display = "none";
+  el.nextElementSibling.style.display = "block";
+}
+function hideAnswer(el){
+  let answer = el.previousElementSibling.previousElementSibling.children[0];
+  let question = el.previousElementSibling.previousElementSibling;
+  answer.style.display = "none";
+  answer.style.opacity = "0";
+  question.style.fontSize = "2rem";
+  answer.style.marginTop = "0"; 
+  el.style.display = "none";
+  el.previousElementSibling.style.display = "block";
+}
 function showTables() {
   if (plus.innerHTML === "+") {
     plus.innerHTML = "-";

@@ -26,10 +26,9 @@
 }
 .green-section {
   background-color: $primary-color-light;
-  margin-bottom: 10rem;
 }
 .section-sixth{
-  margin-bottom: 10rem;
+  margin: 10rem 0;
 }
 .section-seventh{
   margin-bottom: 10rem;
@@ -41,6 +40,13 @@
 }
 .crew_img{
   margin-top:-15rem;
-  margin-bottom: 10rem;
 
+}
+.section-eighth{
+  margin-top:-1rem;
+  padding-top:5rem;
+}
+.footer-section{
+  background-color: $primary-color;
+  color:$color-white !important;
 }
