@@ -41,11 +41,11 @@
             background-color: $primary-color;
         }
         }
-
     }
     &__card{
         width:36rem;
         margin-right:2.4rem;
+        //If You change width and margin-right then you need to change in main.js file for the slider movement
         background-color: $color-white;
         text-align:center;
         padding:8rem 5rem;
@@ -57,12 +57,13 @@
     &__previous{
         justify-self: start;
         display:none;
+        grid-column: 1/2;
     }
     &__next{
         justify-self: end;
+        grid-column: 14/15;
     }
     &__img{
         margin-bottom: 3rem;
-
     }
 }
