@@ -1,17 +1,16 @@
 //---------------SECTION THIRD CSS--------------//
 .sec-third {
   &__heading {
-    grid-column: 5/11;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include heading;
     margin-bottom: 5rem;
   }
   &__box {
     grid-column: 1/15;
     display: flex;
     justify-content: space-between;
+    @media only screen and (max-width:$small){
+      grid-column:1/3;
+    }
   }
   &__card {
     display: flex;
