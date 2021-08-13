@@ -33,6 +33,9 @@ body {
   font-size: 4rem;
   font-weight: bold;
   line-height: 1; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-1 {
+      font-size: 10rem; } }
   .heading-1--primary {
     color: #009c33; }
   .heading-1--secondary {
@@ -43,6 +46,9 @@ body {
   font-weight: normal;
   line-height: 1.13;
   letter-spacing: 0.75px; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-2 {
+      font-size: 8rem; } }
   .heading-2--black {
     color: #000000; }
   .heading-2--primary {
@@ -68,7 +74,7 @@ body {
   color: rgba(0, 0, 0, 0.8); }
   @media only screen and (max-width: 37.5em) {
     .heading-4 {
-      font-size: 4rem; } }
+      font-size: 6rem; } }
   .heading-4--primary {
     color: #009c33; }
   .heading-4--white {
@@ -83,6 +89,9 @@ body {
   margin-top: 1rem;
   line-height: 1.5;
   font-size: 1.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .paragraph {
+      font-size: 5rem; } }
 
 .bold {
   font-weight: bold; }
@@ -117,8 +126,7 @@ body {
   @media only screen and (max-width: 37.5em) {
     .grid {
       grid-template-columns: repeat(2, 45%);
-      grid-column-gap: 2.4rem;
-      margin: 0 2.4rem; } }
+      grid-column-gap: 2.4rem; } }
 
 .flex {
   display: flex;
@@ -139,8 +147,15 @@ body {
   border-radius: 4px;
   margin-right: 2rem;
   cursor: pointer; }
+  @media only screen and (max-width: 37.5em) {
+    .btn__orange {
+      font-size: 5rem; } }
   .btn__orange div {
     padding: 0.5rem 4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .btn__orange div {
+        margin: 0 auto;
+        display: flex; } }
   .btn__orange:hover {
     background-color: #e18e41; }
   .btn__orange:hover > .arrow_img {
@@ -150,6 +165,9 @@ body {
   padding: 0.5rem !important;
   background: #ff7200;
   border-radius: 0 4px 4px 0; }
+  @media only screen and (max-width: 37.5em) {
+    .arrow_img {
+      margin: 0 !important; } }
   .arrow_img img {
     right: 0;
     height: 100%; }
@@ -211,21 +229,47 @@ body {
       font-weight: bold; }
 
 .intro__details {
-  grid-column: 1/9; }
+  grid-column: 1/9;
+  grid-row: 2/3; }
   @media only screen and (max-width: 37.5em) {
     .intro__details {
-      grid-column: 1/3; } }
+      grid-column: 1/3;
+      grid-row: 3/4; } }
 
 .intro__heading {
-  margin: 6rem 0 3rem 0; }
+  margin: 6rem 0 3rem 0;
+  grid-column: 1/9;
+  grid-row: 1/2; }
+  @media only screen and (max-width: 37.5em) {
+    .intro__heading {
+      grid-column: 1/3;
+      grid-row: 1/2; }
+      .intro__heading > h2 {
+        font-size: 6rem !important; } }
 
 .intro__img {
   grid-column: 9/15;
+  grid-row: 1/3;
   justify-self: end;
   position: relative; }
   @media only screen and (max-width: 37.5em) {
     .intro__img {
-      grid-column: 1/3; } }
+      grid-column: 1/3;
+      grid-row: 2/3;
+      background: url("../img/MaskGroup.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      margin: 0;
+      transform: scaleX(1.09);
+      width: 100%;
+      justify-self: start; } }
+
+@media only screen and (max-width: 37.5em) {
+  .intro__photo {
+    width: 120%;
+    margin-left: -15rem;
+    margin-top: 15rem; } }
 
 .intro__service {
   list-style: none;
@@ -239,6 +283,15 @@ body {
 .intro__buttons {
   display: flex;
   margin-top: 5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .intro__buttons {
+      justify-content: space-between;
+      margin-top: 20rem; }
+      .intro__buttons > * {
+        width: 49%; }
+      .intro__buttons > div > button {
+        width: 100%;
+        justify-content: space-between; } }
 
 .service__icon {
   margin-right: 1.5rem; }
@@ -265,42 +318,58 @@ body {
 
 .sec-first__insurance {
   grid-column: 2/14;
+  margin-left: -6rem;
   display: grid;
   grid-template-columns: repeat(12, 7.2rem);
   grid-column-gap: 2.4rem;
-  justify-content: center;
-  margin-left: -6rem; }
+  justify-content: center; }
   @media only screen and (max-width: 37.5em) {
     .sec-first__insurance {
       grid-column: 1/3;
-      display: flex;
-      grid-template-columns: unset;
-      grid-column-gap: unset;
-      margin-left: 0rem; } }
+      margin-left: 0rem;
+      grid-template-columns: repeat(2, 48%);
+      display: grid; } }
 
 .sec-first__card {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 37.5em) {
+    .sec-first__card {
+      width: 100%;
+      margin: 25rem 0; }
+      .sec-first__card h3 {
+        font-size: 7rem; } }
   .sec-first__card--1 {
     grid-column: 1/5; }
     @media only screen and (max-width: 37.5em) {
       .sec-first__card--1 {
-        grid-column: 1/3; } }
+        grid-column: 1/3;
+        width: 100%;
+        display: none; } }
   .sec-first__card--2 {
     grid-column: 5/9; }
     @media only screen and (max-width: 37.5em) {
       .sec-first__card--2 {
-        grid-column: 1/3; } }
+        grid-column: 1/3;
+        display: none; } }
   .sec-first__card--3 {
     grid-column: 9/13; }
     @media only screen and (max-width: 37.5em) {
       .sec-first__card--3 {
-        grid-column: 1/3; } }
+        grid-column: 1/3;
+        display: none; } }
+
+.sec-first__active {
+  display: block; }
 
 .sec-first__photo {
   width: 11rem;
   margin-bottom: 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    .sec-first__photo {
+      width: 40rem; } }
 
 .sec-two__left {
   grid-column: 2/7;
@@ -932,6 +1001,9 @@ body {
   background: url("../img/MaskGroup.svg");
   background-position-x: right;
   background-repeat: no-repeat; }
+  @media only screen and (max-width: 37.5em) {
+    .intro-section {
+      background: none; } }
 
 .two-sections {
   background: url("../img/animation/Street_Illustration.svg");
