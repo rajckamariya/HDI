@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HDI</title>
-
 
 
     <link rel="stylesheet" href="css/style.css">
@@ -110,7 +108,7 @@
             <div class="sec-first__insurance">
                 
                     
-                    <div class="sec-first__card--1 sec-first__active">
+                    <div class="sec-first__card--1 sec-first__active" ontouchend="slideSection(this,event)">
                         <div class="sec-first__card">
                             <img class="sec-first__photo" src="img/images/Icon_Unfall_sorgenfrei.svg" alt="Insurance 1">
                         <h3 class="heading-3 heading-3--primary mb-extraSmall">Für den Fall des Unfalls sorgenfrei</h3>
@@ -121,8 +119,8 @@
                             Sie und Ihr Motorrad.</p>
                         </div>
                     </div>
-                    <div class="sec-first__card--2">
-                        <div class="sec-first__card">
+                    <div class="sec-first__card--2" ontouchend="slideSection(this,event)">
+                        <div class="sec-first__card" >
                         <img class="sec-first__photo" src="img/images/Icon_Werkstattservice.svg" alt="Insurance 2">
                         <h3 class="heading-3 heading-3--primary mb-extraSmall">In Windeseile zurück auf die Straße</h3>
                         <p class="paragraph text-align--center">
@@ -131,7 +129,7 @@
                             Defekte an Ihrer Maschine im Handumdrehen und kompetent beheben.</p>
                             </div>
                     </div>
-                    <div class="sec-first__card--3">
+                    <div class="sec-first__card--3" ontouchend="slideSection(this,event)">
                         <div class="sec-first__card">
                         <img class="sec-first__photo" src="img/images/Icon_Flexibel.svg" alt="Insurance 3">
                         <h3 class="heading-3 heading-3--primary mb-extraSmall">So flexibel wie Ihr Fahrstil</h3>
@@ -146,97 +144,106 @@
 
         </section>
         <section class="section-two grid">
-            <div class="sec-two__left">
-                <div class="sec-two__heading">
-                    <h5 class="heading-4 mb-extraSmall text-align--right">
-                        2 von 8
-                    </h5>
-                    <h2 class="heading-2 heading-2--primary mb-small text-align--right">
-                        Wenn Tiere Ihren Weg kreuzen
-                    </h2>
+            <div class="inline-grid grid">
+                <div class="sec-two__right sec-two__img">
+                    <iframe id="wildFall" onmouseover="wildfall()" src="img/animation/Wildunfall.svg" type="image/svg+xml">
+                        <img src="img/animation/Wildunfall.svg"></iframe>
                 </div>
-                <div class="sec-two__desc">
-                    <p class="paragraph text-align--right">
-                        <span class="bold">Lena Fuchs</span> genießt es, auf ihrem Zweirad durch die Welt zu fahren.
-                        Meist beträgt ihr Bremsweg
-                        dabei kaum mehr als 50 Meter. Doch auch das ist manchmal nicht genug! Heute kreuzt ein Reh Lenas
-                        Weg, Ausweichen unmöglich. Zum Glück bleibt sie unversehrt.
-                    </p>
-                    <p class="paragraph text-align--right">
-                        <span class="bold">Doppeltes Glück:</span> Um Bergung und Reparatur ihres Motorrads
-                        und alle Formalia der Wildkollision kümmert sich die Motorradversicherung der HDI.
-                    </p>
-                </div>
-                <div class="sec-two__btn btn btn--primary text-align--right">
-                    Jetzt Tarif berechnen
-                </div>
-            </div>
-            <div class="sec-two__right sec-two__img">
-                <iframe id="wildFall" onmouseover="wildfall()" src="img/animation/Wildunfall.svg" type="image/svg+xml">
-                    <img src="img/animation/Wildunfall.svg"></iframe>
-
-            </div>
-            <div class="sec-two__left sec-two__img">
-                <iframe id="Fahrbahn" onmouseover="fahrbahn()" src="img/animation/Abkommen_Fahrbahn.svg"
-                    type="image/svg+xml">
-                    <img src="img/animation/Abkommen_Fahrbahn.svg"></iframe>
-            </div>
-            <div class="sec-two__right">
-                <div class="sec-two__heading">
-                    <h2 class="heading-2 heading-2--primary mb-small text-align--left">
-                        Wenn Laub zur Panne führt
-                    </h2>
-                </div>
-                <div class="sec-two__desc">
-                    <p class="paragraph text-align--left">
-                        Wälder, Autobahnen, Hochstraßen – <span class="bold">Peter Baum</span> legt sich gerne in immer
-                        neue Kurven. Heute ist er
-                        mal wieder zügig unterwegs. Da passiert es: Laubansammlungen verstecken Steine und andere
-                        Hindernisse! Und schon kommt Peter von der Fahrbahn ab.
-                        Zum Glück passiert ihm nichts.
-                    </p>
-                    <p class="paragraph text-align--left">
-                        Um die <span class="bold">Bergung seiner defekten Maschine</span> und seinen <span
-                            class="bold">Transport nach
-                            Hause</span> kümmert sich außerdem
-                        die Motorradversicherung von HDI – noch einmal gutgegangen, Peter!
-                    </p>
-                </div>
-                <div class="sec-two__btn btn btn--primary text-align--left">
-                    Jetzt Tarif berechnen
+                <div class="sec-two__left">
+                    <div class="sec-two__heading">
+                        <h5 class="heading-4 mb-extraSmall text-align--right">
+                            2 von 8
+                        </h5>
+                        <h2 class="heading-2 heading-2--primary mb-small text-align--right">
+                            Wenn Tiere Ihren Weg kreuzen
+                        </h2>
+                    </div>
+                    <div class="sec-two__desc">
+                        <p class="paragraph text-align--right">
+                            <span class="bold">Lena Fuchs</span> genießt es, auf ihrem Zweirad durch die Welt zu fahren.
+                            Meist beträgt ihr Bremsweg
+                            dabei kaum mehr als 50 Meter. Doch auch das ist manchmal nicht genug! Heute kreuzt ein Reh Lenas
+                            Weg, Ausweichen unmöglich. Zum Glück bleibt sie unversehrt.
+                        </p>
+                        <p class="paragraph text-align--right">
+                            <span class="bold">Doppeltes Glück:</span> Um Bergung und Reparatur ihres Motorrads
+                            und alle Formalia der Wildkollision kümmert sich die Motorradversicherung der HDI.
+                        </p>
+                    </div>
+                    <button class="sec-two__btn btn btn--primary text-align--right">
+                        Jetzt Tarif berechnen
+                    </button>
                 </div>
             </div>
-            <div class="sec-two__left">
-                <div class="sec-two__heading">
-                    <h2 class="heading-2 heading-2--primary mb-small text-align--right">
-                        Mal wieder ausgebremst
-                    </h2>
+            
+            <div class="inline-grid grid">
+                <div class="sec-two__left sec-two__img">
+                    <iframe id="Fahrbahn" onmouseover="fahrbahn()" src="img/animation/Abkommen_Fahrbahn.svg"
+                        type="image/svg+xml">
+                        <img src="img/animation/Abkommen_Fahrbahn.svg"></iframe>
                 </div>
-                <div class="sec-two__desc">
-                    <p class="paragraph text-align--right">
-                        Heute mal wieder richtig Gas geben! <span class="bold">Luca Schnell</span> plant einen
-                        wunderbaren Sonntagsausflug. Doch
-                        schon bei der Ortsausfahrt erlebt er sein blaues Wunder. Ein Auto trödelt Richtung Ortsausfahrt,
-                        als ein weiteres Fahrzeug unerwartet von der Seite auftaucht. Der Pkw vor Luca legt eine
-                        Vollbremsung ein –
-                        krach, Auffahrunfall!
-                    </p>
-                    <p class="paragraph text-align--right">
-                        Zu seinem Glück ist Luca bei der HDI versichert.
-                        <span class="bold">Alle entstandenen Kosten werden ihm ersetzt</span> und schon bald kann er –
-                        diesmal etwas geduldiger –
-                        neue Wege erkunden.
-                    </p>
-                </div>
-                <div class="sec-two__btn btn btn--primary text-align--right">
-                    Jetzt Tarif berechnen
+                <div class="sec-two__right">
+                    <div class="sec-two__heading">
+                        <h2 class="heading-2 heading-2--primary mb-small text-align--left">
+                            Wenn Laub zur Panne führt
+                        </h2>
+                    </div>
+                    <div class="sec-two__desc">
+                        <p class="paragraph text-align--left">
+                            Wälder, Autobahnen, Hochstraßen – <span class="bold">Peter Baum</span> legt sich gerne in immer
+                            neue Kurven. Heute ist er
+                            mal wieder zügig unterwegs. Da passiert es: Laubansammlungen verstecken Steine und andere
+                            Hindernisse! Und schon kommt Peter von der Fahrbahn ab.
+                            Zum Glück passiert ihm nichts.
+                        </p>
+                        <p class="paragraph text-align--left">
+                            Um die <span class="bold">Bergung seiner defekten Maschine</span> und seinen <span
+                                class="bold">Transport nach
+                                Hause</span> kümmert sich außerdem
+                            die Motorradversicherung von HDI – noch einmal gutgegangen, Peter!
+                        </p>
+                    </div>
+                    <button class="sec-two__btn btn btn--primary text-align--left">
+                        Jetzt Tarif berechnen
+                    </button>
                 </div>
             </div>
-            <div class="sec-two__right sec-two__img sec-two__mt">
-                <iframe id="Auffahrunfall" onmouseover="auffahrunfall()" src="img/animation/Auffahrunfall.svg"
-                    type="image/svg+xml">
-                    <img src="img/animation/Auffahrunfall.svg"></iframe>
+            
+            <div class="inline-grid grid">
+                <div class="sec-two__right sec-two__img sec-two__mt">
+                    <iframe id="Auffahrunfall" onmouseover="auffahrunfall()" src="img/animation/Auffahrunfall.svg"
+                        type="image/svg+xml">
+                        <img src="img/animation/Auffahrunfall.svg"></iframe>
+                </div>
+                <div class="sec-two__left">
+                    <div class="sec-two__heading">
+                        <h2 class="heading-2 heading-2--primary mb-small text-align--right">
+                            Mal wieder ausgebremst
+                        </h2>
+                    </div>
+                    <div class="sec-two__desc">
+                        <p class="paragraph text-align--right">
+                            Heute mal wieder richtig Gas geben! <span class="bold">Luca Schnell</span> plant einen
+                            wunderbaren Sonntagsausflug. Doch
+                            schon bei der Ortsausfahrt erlebt er sein blaues Wunder. Ein Auto trödelt Richtung Ortsausfahrt,
+                            als ein weiteres Fahrzeug unerwartet von der Seite auftaucht. Der Pkw vor Luca legt eine
+                            Vollbremsung ein –
+                            krach, Auffahrunfall!
+                        </p>
+                        <p class="paragraph text-align--right">
+                            Zu seinem Glück ist Luca bei der HDI versichert.
+                            <span class="bold">Alle entstandenen Kosten werden ihm ersetzt</span> und schon bald kann er –
+                            diesmal etwas geduldiger –
+                            neue Wege erkunden.
+                        </p>
+                    </div>
+                    <button class="sec-two__btn btn btn--primary text-align--right">
+                        Jetzt Tarif berechnen
+                    </button>
+                </div>
             </div>
+            
+            
         </section>
 
     </div>
@@ -253,39 +260,47 @@
             <h4 class="heading-4">Sichern Sie sich ab und führen Ihre Maschine guten Gewissens aus</h4>
         </div>
         <div class="sec-third__box">
-            <div class="sec-third__card">
-                <div class="sec-third__img">
-                    <img src="img/HDI_LP_KFZ_Prozess_Icons-03.svg" alt="Prozess Icon 1">
-                </div>
-                <div class="sec-third__number">
-                    <h2 class="heading-1 heading-1--secondary">1.</h2>
-                </div>
-                <div class="sec-third__detail">
-                    <h2 class="heading-4 heading-4--primary bold">Tarif online anpassen und berechnen</h2>
-                </div>
-            </div>
-            <div class="sec-third__card">
-                <div class="sec-third__img">
-                    <img src="img/HDI_LP_KFZ_Prozess_Icons-01.svg" alt="Prozess Icon 1">
-                </div>
-                <div class="sec-third__number">
-                    <h2 class="heading-1 heading-1--secondary">2.</h2>
-                </div>
-                <div class="sec-third__detail">
-                    <h2 class="heading-4 heading-4--primary bold">Vertrag online abschließen und absichern</h2>
+            <div id="sec-third__previous" class="sec-third__previous"><img src="img/group-48.svg" alt=""></div>
+            <div class="sec-third__card--1 secThirdSlider">
+                <div class="sec-third__card">
+                    <div class="sec-third__img">
+                        <img src="img/HDI_LP_KFZ_Prozess_Icons-03.svg" alt="Prozess Icon 1">
+                    </div>
+                    <div class="sec-third__number">
+                        <h2 class="heading-1 heading-1--secondary">1.</h2>
+                    </div>
+                    <div class="sec-third__detail">
+                        <h2 class="heading-4 heading-4--primary bold">Tarif online anpassen und berechnen</h2>
+                    </div>
                 </div>
             </div>
-            <div class="sec-third__card">
-                <div class="sec-third__img">
-                    <img src="img/HDI_LP_KFZ_Prozess_Icons-02.svg" alt="Prozess Icon 1">
-                </div>
-                <div class="sec-third__number">
-                    <h2 class="heading-1 heading-1--secondary">3.</h2>
-                </div>
-                <div class="sec-third__detail">
-                    <h2 class="heading-4 heading-4--primary bold">Versicherung im HDI-Online-Kundenportal managen</h2>
+            <div class="sec-third__card--2 secThirdSlider">
+                <div class="sec-third__card">
+                    <div class="sec-third__img">
+                        <img src="img/HDI_LP_KFZ_Prozess_Icons-01.svg" alt="Prozess Icon 1">
+                    </div>
+                    <div class="sec-third__number">
+                        <h2 class="heading-1 heading-1--secondary">2.</h2>
+                    </div>
+                    <div class="sec-third__detail">
+                        <h2 class="heading-4 heading-4--primary bold">Vertrag online abschließen und absichern</h2>
+                    </div>
                 </div>
             </div>
+            <div class="sec-third__card--3 secThirdSlider">
+                <div class="sec-third__card">
+                    <div class="sec-third__img">
+                        <img src="img/HDI_LP_KFZ_Prozess_Icons-02.svg" alt="Prozess Icon 1">
+                    </div>
+                    <div class="sec-third__number">
+                        <h2 class="heading-1 heading-1--secondary">3.</h2>
+                    </div>
+                    <div class="sec-third__detail">
+                        <h2 class="heading-4 heading-4--primary bold">Versicherung im HDI-Online-Kundenportal managen</h2>
+                    </div>
+                </div>
+            </div>
+            <div id="sec-third__next" class="sec-third__next"><img src="img/group-47.svg" alt=""></div>
         </div>
     </section>
 
@@ -300,135 +315,144 @@
                     sie und ihr Motorrad </h2>
                 <h4 class="heading-4">Passen Sie Ihren HDI-Tarif individuell an Ihre Situation an</h4>
             </div>
-
+            
             <div class="sec-fourth__premium grid">
                 <div class="sec-fourth__bar">
                     <h4 class="heading-3">Unsere Produktlinien</h4>
                 </div>
-                <div class="premium__card premium__card--secondary">
-                    <img src="img/images/tarife_motor_premium.svg" alt="Motor Premium" class="premium__img">
-                    <div class="premium__heading premium__heading--secondary">
-                        <h1 class="heading-2">Motor Premium</h1>
-                        <h2 class="heading-3">Umfassender Premium-Schutz</h2>
-                    </div>
-                    <div class="premium__price premium__price--secondary">
-                        <h2 class="heading-3">ab <span>7,06*</span> / Monat</h2>
-                        <h2 class="heading-3">ab 84.66 €* /Jahr</h2>
-
-                    </div>
-                    <button class="premium__action btn__orange">
-                        <div>
-                            <span>Jetzt Tarif berechnen</span>
+                <div class="premium__owl-carousel grid">
+                <div id="premium__previous" class="premium__previous"><img src="img/group-48.svg" alt=""></div>
+                <div class="premium__item--1">
+                    <div class="premium__card premium__card--secondary">
+                        <img src="img/images/tarife_motor_premium.svg" alt="Motor Premium" class="premium__img">
+                        <div class="premium__heading premium__heading--secondary">
+                            <h1 class="heading-2">Motor Premium</h1>
+                            <h2 class="heading-3">Umfassender Premium-Schutz</h2>
                         </div>
-                        <div class="arrow_img"><img src="img/arrow_forward_ios.svg" alt="Right Arrow"></div>
-                    </button>
-                    <div class="premium__details">
-                        <ul class="premium__list">
-                            <li>
-                                <div class="premium__icon">
-                                    <img src="img/Checkmark_orange.svg">
-                                </div>
-                                <div class="premium__text">
-                                    <h4 class="heading-4"><span class="bold">100 Mio. €</span> Ver­sich­erungs­summe,
-                                        bei Per­sonen­schäden bis zu
-                                        <span class="bold">15 Mio. €</span>
-                                    </h4>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="premium__icon">
-                                    <img src="img/Checkmark_orange.svg">
-                                </div>
-                                <div class="premium__text">
-                                    <h4 class="heading-4">Verzicht auf den Einwand der groben Fahrlässigkeit</h4>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="premium__icon">
-                                    <img src="img/Checkmark_orange.svg">
-                                </div>
-                                <div class="premium__text">
-                                    <h4 class="heading-4">Tierbiss (inkl. Marderbiss) und Folgeschäden bis <span
-                                            class="bold">10.000 €</span></h4>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="premium__icon">
-                                    <img src="img/Checkmark_orange.svg">
-                                </div>
-                                <div class="premium__text">
-                                    <h4 class="heading-4">Zusammenstoß mit allen Tieren</h4>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="premium__icon">
-                                    <img src="img/Checkmark_orange.svg">
-                                </div>
-                                <div class="premium__text">
-                                    <h4 class="heading-4">Erstattung für beschädigte Leuchtmittel
-                                    </h4>
-                                </div>
-                            </li>
-
-                        </ul>
+                        <div class="premium__price premium__price--secondary">
+                            <h2 class="heading-3">ab <span>7,06*</span> / Monat</h2>
+                            <h2 class="heading-3">ab 84.66 €* /Jahr</h2>
+    
+                        </div>
+                        <button class="premium__action btn__orange">
+                            <div>
+                                <span>Jetzt Tarif berechnen</span>
+                            </div>
+                            <div class="arrow_img"><img src="img/arrow_forward_ios.svg" alt="Right Arrow"></div>
+                        </button>
+                        <div class="premium__details">
+                            <ul class="premium__list">
+                                <li>
+                                    <div class="premium__icon">
+                                        <img src="img/Checkmark_orange.svg">
+                                    </div>
+                                    <div class="premium__text">
+                                        <h4 class="heading-4"><span class="bold">100 Mio. €</span> Ver­sich­erungs­summe,
+                                            bei Per­sonen­schäden bis zu
+                                            <span class="bold">15 Mio. €</span>
+                                        </h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="premium__icon">
+                                        <img src="img/Checkmark_orange.svg">
+                                    </div>
+                                    <div class="premium__text">
+                                        <h4 class="heading-4">Verzicht auf den Einwand der groben Fahrlässigkeit</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="premium__icon">
+                                        <img src="img/Checkmark_orange.svg">
+                                    </div>
+                                    <div class="premium__text">
+                                        <h4 class="heading-4">Tierbiss (inkl. Marderbiss) und Folgeschäden bis <span
+                                                class="bold">10.000 €</span></h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="premium__icon">
+                                        <img src="img/Checkmark_orange.svg">
+                                    </div>
+                                    <div class="premium__text">
+                                        <h4 class="heading-4">Zusammenstoß mit allen Tieren</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="premium__icon">
+                                        <img src="img/Checkmark_orange.svg">
+                                    </div>
+                                    <div class="premium__text">
+                                        <h4 class="heading-4">Erstattung für beschädigte Leuchtmittel
+                                        </h4>
+                                    </div>
+                                </li>
+    
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="premium__card premium__card--primary">
-                    <img src="img/images/tarife_motor_komfort.svg" alt="Motor Premium" class="premium__img">
-                    <div class="premium__heading premium__heading--primary">
-                        <h1 class="heading-2">Motor Komfort</h1>
-                        <h2 class="heading-3">Umfangreiche Absicherung</h2>
-                    </div>
-                    <div class="premium__price premium__price--primary">
-                        <h2 class="heading-3">ab <span>6,83 €*</span> / Monat</h2>
-                        <h2 class="heading-3">ab 81.95 €* /Jahr</h2>
-
-                    </div>
-                    <div class="premium__action btn btn--primary">
-                        Jetzt Tarif berechnen
-                    </div>
-                    <div class="premium__details">
-                        <ul class="premium__list">
-                            <li>
-                                <div class="premium__icon">
-                                    <img src="img/Checkmark_green.svg">
-                                </div>
-                                <div class="premium__text">
-                                    <h4 class="heading-4"><span class="bold">100 Mio. €</span> Ver­sich­erungs­summe,
-                                        bei Per­sonen­schäden bis zu
-                                        <span class="bold">15 Mio. €</span>
-                                    </h4>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="premium__icon">
-                                    <img src="img/Checkmark_green.svg">
-                                </div>
-                                <div class="premium__text">
-                                    <h4 class="heading-4">Verzicht auf den Einwand der groben Fahrlässigkeit</h4>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="premium__icon">
-                                    <img src="img/Checkmark_green.svg">
-                                </div>
-                                <div class="premium__text">
-                                    <h4 class="heading-4">Tierbiss (inkl. Marderbiss) und Folgeschäden bis <span
-                                            class="bold">3.000 €</span></h4>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="premium__icon">
-                                    <img src="img/Checkmark_green.svg">
-                                </div>
-                                <div class="premium__text">
-                                    <h4 class="heading-4">Zusammenstoß mit allen Tieren</h4>
-                                </div>
-                            </li>
-
-                        </ul>
+                <div class="premium__item--2">
+                    <div class="premium__card premium__card--primary">
+                        <img src="img/images/tarife_motor_komfort.svg" alt="Motor Premium" class="premium__img">
+                        <div class="premium__heading premium__heading--primary">
+                            <h1 class="heading-2">Motor Komfort</h1>
+                            <h2 class="heading-3">Umfangreiche Absicherung</h2>
+                        </div>
+                        <div class="premium__price premium__price--primary">
+                            <h2 class="heading-3">ab <span>6,83 €*</span> / Monat</h2>
+                            <h2 class="heading-3">ab 81.95 €* /Jahr</h2>
+    
+                        </div>
+                        <div class="premium__action btn btn--primary">
+                            Jetzt Tarif berechnen
+                        </div>
+                        <div class="premium__details">
+                            <ul class="premium__list">
+                                <li>
+                                    <div class="premium__icon">
+                                        <img src="img/Checkmark_green.svg">
+                                    </div>
+                                    <div class="premium__text">
+                                        <h4 class="heading-4"><span class="bold">100 Mio. €</span> Ver­sich­erungs­summe,
+                                            bei Per­sonen­schäden bis zu
+                                            <span class="bold">15 Mio. €</span>
+                                        </h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="premium__icon">
+                                        <img src="img/Checkmark_green.svg">
+                                    </div>
+                                    <div class="premium__text">
+                                        <h4 class="heading-4">Verzicht auf den Einwand der groben Fahrlässigkeit</h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="premium__icon">
+                                        <img src="img/Checkmark_green.svg">
+                                    </div>
+                                    <div class="premium__text">
+                                        <h4 class="heading-4">Tierbiss (inkl. Marderbiss) und Folgeschäden bis <span
+                                                class="bold">3.000 €</span></h4>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="premium__icon">
+                                        <img src="img/Checkmark_green.svg">
+                                    </div>
+                                    <div class="premium__text">
+                                        <h4 class="heading-4">Zusammenstoß mit allen Tieren</h4>
+                                    </div>
+                                </li>
+    
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <div id="premium__next" class="premium__next"><img src="img/group-47.svg" alt=""></div>
+                </div>
+                
             </div>
 
             <div class="sec-fourth__heading">
@@ -706,6 +730,7 @@ Tunen sie ihren Tarif
                 </h2>
                 <h4 class="heading-4">Noch mehr Schutz mit flexiblen Zusatzoptionen*</h4>
             </div>
+            
             <div class="sec-fifth__main grid">
                 <div id="teriff__previous" class="teriff__previous"><img src="img/group-48.svg" alt=""></div>
                 <div class="teriff">
@@ -1089,8 +1114,12 @@ MOTORRADVERSICHERUNG WECHSELN
     <!-- <script>
         setTimeout(function () { document.getElementById("animationBike").style.display = "none"; }, 12000)
     </script> -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
     <script src="js/animation.js"></script>
     <script src="js/main.js"></script>
+    <script src="owl-car/jquery.min.js"></script>
+    <script src="owl-car/owl.carousel.min.js"></script>
 </body>
 
 </html>

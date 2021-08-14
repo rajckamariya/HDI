@@ -52,6 +52,11 @@
   padding: 1rem 4rem;
   cursor: pointer;
   width: fit-content;
+  @media only screen and (max-width:$small)
+  {
+    font-size:6rem;
+    padding:4rem 8rem;
+  }
   &--secondary {
     background-color: $color-white;
     color: $secondary-color-light;
