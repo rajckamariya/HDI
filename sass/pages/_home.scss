@@ -8,6 +8,9 @@
   background: url("../img/MaskGroup.svg");
   background-position-x: right;
   background-repeat: no-repeat;
+  @media only screen and (max-width:$small){
+    background: none;
+  }
 }
 
 .two-sections {
@@ -17,6 +20,9 @@
   background-position-y: top;
   margin-top: -10rem;
   padding-top: 20rem;
+  @media only screen and (max-width:$small){
+    background: transparent;
+  }
 }
 .section-first {
   margin: 5rem 0;
@@ -26,4 +32,33 @@
 }
 .green-section {
   background-color: $primary-color-light;
+}
+.section-sixth{
+  margin: 10rem 0;
+}
+.section-seventh{
+  margin-bottom: 10rem;
+}
+.bomberg{
+  grid-column: 2/14;
+  width:15rem;
+
+}
+.crew_img{
+  margin-top:-15rem;
+  width:100%;
+  > img{
+    width:100%;
+  }
+}
+.section-eighth{
+  margin-top:-1rem;
+  padding-top:5rem;
+}
+.primary-back{
+  background-color: $primary-color;
+}
+.footer-section{
+  background-color: $primary-color;
+  color:$color-white !important;
 }
